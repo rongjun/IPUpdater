@@ -23,7 +23,9 @@ sleep_time = 15
 
 ### Program ###
 def main():
-  #Place hold for IP Address
+  # Domain Update URL
+  update_dns_url = domain_update_url + domain_update_php + "?" + domain_update_key
+  # Place hold for IP Address
   old_ip = ''
   while True:
     try:
@@ -34,7 +36,6 @@ def main():
 
       if str(my_ip[0]) != old_ip:
         #print 'IP changed to...', str(my_ip[0]), ': Processing update.'
-        update_dns_url = domain_update_url + domain_update_php + "?" + domain_update_key
         update_dns = urllib.urlopen(update_dns_url).read()
         print update_dns
         print 'IP Updated @', str(datetime.now()), ':', str(my_ip[0])

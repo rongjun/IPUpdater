@@ -15,7 +15,10 @@ Requests module (https://pypi.python.org/pypi/requests)
 
 $ wget https://pypi.python.org/packages/source/r/requests/requests-2.0.0.tar.gz
 $ tar xzvf requests-2.0.0.tar.gz
+
 $ cp -r requests-2.0.0/requests /usr/lib/python3.2/
+OR
+$ cp -r requests-2.0.0/requests /usr/lib/python2.7/
 
 ### Setup ###
 Open ipupdater.py using a text editor and insert your key into domain_update_key

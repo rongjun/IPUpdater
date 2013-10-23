@@ -10,7 +10,7 @@
 # Description:       A simple python script that query dyndns for IP and update afraid.org DNS
 ### END INIT INFO
  
-DIR=/var/disk/bin
+DIR=/usr/local/bin/ipupdater
 DAEMON=$DIR/ipupdater.py
 DAEMON_NAME=ipupdater
  
